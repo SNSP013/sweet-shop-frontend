@@ -101,4 +101,6 @@ The frontend uses a custom **Axios instance** that:
 - Functioned as both a **UI designer** and **React mentor**, leading to a polished and well-structured frontend.
 
 ---
+## Website Page
 
+<img width="1280" height="697" alt="image" src="https://github.com/user-attachments/assets/a57b605c-a70e-49e0-97cd-125dc3c9c5ed" />
