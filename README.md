@@ -1,70 +1,174 @@
-# Getting Started with Create React App
+✅ FRONTEND — FULL README.md (Ready to Paste)
+# 🍬 Sweet Shop Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend for the Sweet Shop Management System built using **React**, **React Router**, **Axios**, and a completely custom modern UI with global CSS animations and transitions.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- Login system with JWT
+- Protected routes based on role (Admin/User)
+- Dashboard with real-time metrics
+- Modern UI with animations, shadows, and glassmorphism
+- Sweets management (CRUD)
+- Inventory management (Purchase / Restock)
+- User management (Admin only)
+- Global CSS theme for consistent styling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+- **React**
+- **React Router**
+- **Axios**
+- **jwt-decode**
+- **Custom global CSS**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📦 Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npm install
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🔧 Environment Variables
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create .env:
 
-### `npm run eject`
+REACT_APP_API_URL=http://localhost:3000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+📡 API Communication
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The frontend uses an Axios instance that:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Automatically includes JWT token in headers
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Handles 401 errors globally
 
-## Learn More
+Redirects unauthorized users to login
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🖥️ Screens Overview
+🔐 Login
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Authenticates user
 
-### Code Splitting
+Stores JWT token
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📊 Dashboard
 
-### Analyzing the Bundle Size
+Total sweets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Low stock count
 
-### Making a Progressive Web App
+User count (Admin)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Recent sweets
 
-### Advanced Configuration
+Inventory preview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+🍭 Sweets Management
 
-### Deployment
+List sweets
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Create sweet
 
-### `npm run build` fails to minify
+Edit sweet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Delete sweet (Admin)
+
+📦 Inventory
+
+Purchase sweet
+
+Restock sweet (Admin)
+
+👥 Users (Admin Only)
+
+List users
+
+Create user
+
+Delete user
+
+📌 MY AI USAGE (Required Section)
+🤖 Tools Used
+
+ChatGPT (GPT-5.1, GPT-4o)
+
+GitHub Copilot
+
+🔧 How I Used AI
+1. React Components
+
+AI helped generate:
+
+Login, Dashboard, Sweets pages
+
+User & Inventory management pages
+
+Navbar with dynamic role rendering
+
+ProtectedRoute component logic
+
+2. Axios Client
+
+AI wrote:
+
+Axios instance with interceptors
+
+Token injection logic
+
+Error handling middleware
+
+3. Animations & CSS
+
+AI designed:
+
+Global CSS theme (Inter + Poppins fonts)
+
+Glassmorphism navbar
+
+Floating metric cards
+
+Button micro-interactions
+
+Smooth fade + slide animations
+
+4. Bug Fixing
+
+AI resolved:
+
+Delete API failing due to missing token
+
+Sweet Edit not loading due to wrong URL
+
+Login errors caused by incorrect backend prefix
+
+Slow re-renders & missing dependencies
+
+5. UX Improvements
+
+AI suggested:
+
+Better layout spacing
+
+Dashboard grid layout
+
+Inventory color-coded statuses
+
+🧠 Reflection — How AI Improved My Workflow
+
+Accelerated UI component creation.
+
+Enabled creation of high-quality UI without spending hours on CSS.
+
+Helped structure React app cleanly.
+
+Significantly reduced debugging time.
+
+Allowed me to learn better coding patterns.
+
+AI acted as both a UI designer and React mentor, helping deliver a polished frontend quickly.
